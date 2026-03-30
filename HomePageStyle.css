@@ -1,0 +1,358 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url("Img/BackgroundPic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Instrument Serif", serif;
+}
+    
+
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #3c0e18d2;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: #C8A27C solid 3px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.navbar .nav-link {
+    font-family: "Instrument Serif", serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #F7CAD0 !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline solid #B56576 2px;
+    transform: scale(1.01);
+}
+
+.navbar-nav {
+    gap: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-left: 1%;
+    font-family: "Instrument Serif", serif;
+    color: #F7CAD0 !important;
+}
+
+.btn {
+    border-radius: 60px;
+    color: #3A2119;
+    font-family: "Instrument Serif", serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: #EBCDB7;
+    padding: 10px 20px 10px 20px;
+    border: solid #EBCDB7 2px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #EBCDB7;
+    background: #6B8F71;
+    border-color: #6B8F71;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: 4rem;
+    margin-left: 1%;
+    color: #A3C9A8;
+}
+
+/* Carousel */
+.carouselPic {
+    filter: blur(5px);
+}
+
+.carousel-slide {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.carousel-caption h2 {
+    font-size: 4rem;
+    font-family: "Instrument Serif", serif;
+    color: #FFF5FB;
+    text-shadow: 1px 2px 12px rgba(58, 33, 25, 0.85);
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-item img {
+        height: 175px;
+    }
+}
+
+/* Categories */
+.genres-section{
+    background: linear-gradient(
+    135deg,
+    #F7F4D5,   /* light beige (near white) */
+    #D3968C,   /* soft rosy pink */
+    #efb3d0    /* soft moss green */
+  );
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite alternate;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 16px;
+    width: 95%;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.p-3 img {
+    display: block;
+    height: 12rem;
+    width: auto;
+    box-shadow: 0 15px 15px -12px #C8A27C;
+    border-radius: 7%;
+}
+
+.p-3 img:hover {
+    border-bottom: 3px solid #F7F4D5;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 555px) {
+  .p-3 img {
+    height: 6.3rem;
+    width: auto;
+  }
+
+  .genres-section .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .genres-section .col {
+    flex: 0 0 auto;
+  }
+}
+
+/* Comments */
+.testimonials {
+    padding: 1.5rem 1rem 3rem 1rem;
+    background: transparent;
+    border-radius: 16px;
+    margin: 0 1rem;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    font-family: "Instrument Serif", serif;
+    font-weight: 600;
+    color: #3A2119;
+    border-left: 10px solid #A3C9A8;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    width:95%;
+}
+
+.comment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.comment-card {
+    background-color: #ffffff;
+    border-radius: 2rem 2rem 2rem 0;
+    padding: 1.8rem 1.5rem;
+    box-shadow: 0 15px 20px -12px #C8A27C;
+    border: 1px solid #EBCDB7;
+    transition: 0.2s;
+}
+
+.comment-card:hover {
+    transform: scale(1.02);
+    border-color: #A3C9A8;
+}
+
+.stars {
+    color: #C8A27C;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+}
+
+.comment-txt {
+    font-size: 1.1rem;
+    color: #3A2119;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    color: #3A2119;
+    font-weight: 600;
+    border-top: 2px dashed #EBCDB7;
+    padding-top: 0.8rem;
+}
+
+.user i {
+    background-color: #EBCDB7;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #3A2119;
+}
+
+.user span {
+    color: #C8A27C;
+}
+
+/* About us */
+.About-us {
+    background-color: #692d2dd2;
+    border-radius: 3%;
+    padding: 50px 50px 20px 50px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    color: #EBCDB7;
+}
+
+.About-us h1 {
+    font-family: "Instrument Serif", serif;
+    color: #F7CAD0;
+}
+
+.About-us p {
+    color: #EADFD3;
+}
+
+.About-us strong {
+    color: #F7CAD0;
+}
+
+.About-us .row.text-center i {
+    color: #A3C9A8;
+}
+
+.About-us .row.text-center span {
+    color: #F7CAD0;
+}
+
+#AboutUsPic {
+    display: block;
+    filter: blur(3px);
+    border-radius: 3%;
+    height: 29rem;
+}
+
+@media (max-width: 821px) {
+    #AboutUsPic {
+        height: 22rem;
+    }
+}
+
+@media (max-width: 1281px) {
+    .about-pic {
+        display: none;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #3A2119, #6b2d2d, #530630);
+    padding: 2rem;
+    border-top: 3px solid #C8A27C;
+    transition: background 0.5s ease-out;
+}
+
+.footer-title {
+    display: inline-block;
+    color: #F7CAD0;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px #F7CAD0 solid;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.footer-links a {
+    color: #EADFD3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-family: "Instrument Serif", serif;
+}
+
+.footer-links a:hover {
+    color: #F7CAD0;
+    transform: translateX(5px);
+}
+
+.footer-links i {
+    margin-right: 8px;
+    width: 20px;
+    color: #A3C9A8;
+    font-size: 1.2rem;
+}
+
+.footer-links a:hover i {
+    animation: bounce 0.3s ease;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(235, 205, 183, 0.3);
+    padding-top: 1.5rem;
+    align-content: center;
+}
+
+@media (max-width: 576px) {
+    .footer-links a:hover {
+        transform: translateY(-10px);
+    }
+}
